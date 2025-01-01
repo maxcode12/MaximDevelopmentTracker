@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{13D3A59B-CD2D-4A16-A634-2F89796BA95B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CFBA161A-5398-4255-AF4E-07F5E11339F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximDevelopmentTracker.API", "MaximDevelopmentTracker.API\MaximDevelopmentTracker.API.csproj", "{F390D49A-143D-4CFA-91E6-B069C32F0081}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F390D49A-143D-4CFA-91E6-B069C32F0081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F390D49A-143D-4CFA-91E6-B069C32F0081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F390D49A-143D-4CFA-91E6-B069C32F0081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F390D49A-143D-4CFA-91E6-B069C32F0081}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F390D49A-143D-4CFA-91E6-B069C32F0081} = {13D3A59B-CD2D-4A16-A634-2F89796BA95B}
+	EndGlobalSection
+EndGlobal
