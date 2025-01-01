@@ -20,13 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-    <Folder Include="DataContext\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Utilis\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
