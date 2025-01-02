@@ -45,9 +45,9 @@ public class GoalService : IGoalService
         };
     }
 
-    public async Task<GoalDto> CreateGoalAsync(Goal goal)
+    public async Task<GoalDto> CreateGoalAsync(GoalDto goal)
     {
-        _context.Goals.Add(goal);
+        //_context.Goals.Add(goal);
         await _context.SaveChangesAsync();
         return new GoalDto
         {
@@ -62,7 +62,7 @@ public class GoalService : IGoalService
         };
     }
 
-    public async Task<GoalDto> UpdateGoalAsync(Guid id, Goal goal)
+    public async Task<GoalDto> UpdateGoalAsync(Guid id, GoalDto goal)
     {
         var goalToUpdate = await _context.Goals.FirstOrDefaultAsync(g => g.Id == id);
         goalToUpdate.Title = goal.Title;

@@ -28,13 +28,13 @@ public class GoalController : ControllerBase
         return Ok(goal);
     }
     [HttpPost]
-    public async Task<ActionResult<GoalDto>> CreateGoal([FromBody] Goal goalDto)
+    public async Task<ActionResult<GoalDto>> CreateGoal([FromBody] GoalDto goalDto)
     {
         var goal = await _goalService.CreateGoalAsync(goalDto);
         return CreatedAtAction(nameof(GetGoal), new { id = goal.Id }, goal);
     }
     [HttpPut("{id}")]
-    public async Task<ActionResult<GoalDto>> UpdateGoal(Guid id, [FromBody] Goal goalDto)
+    public async Task<ActionResult<GoalDto>> UpdateGoal(Guid id, [FromBody] GoalDto goalDto)
     {
         var goal = await _goalService.UpdateGoalAsync(id, goalDto);
         return Ok(goal);
