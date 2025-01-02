@@ -11,6 +11,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IGoalService, GoalService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IProgressLogService, ProgressLogService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

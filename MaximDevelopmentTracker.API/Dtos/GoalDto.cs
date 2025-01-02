@@ -20,14 +20,11 @@ public class GoalDto
 public class ProgressLogDto
 {
     public Guid Id { get; set; }
-    [Required]
-    [StringLength(255)]
-    public string Title { get; set; } = string.Empty;
-    public string Description { get; set; } = string.Empty;
-    public DateTime Date { get; set; }
-    public decimal Progress { get; set; }
+    public DateTime ProgressDate { get; set; }
+    public decimal ProgressValue { get; set; }
+    public string Notes { get; set; }
     public Guid GoalId { get; set; }
-   
+
 }
 
 public class UserDto
@@ -42,4 +39,21 @@ public class UserDto
     public string SocialProviderId { get; set; } = string.Empty;
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
+}
+
+public class UserLoginDto
+{
+    public string Email { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
+}
+
+public class UserRegisterDto
+{
+    public string Email { get; set; } = string.Empty;
+    public string? Username { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
+    public string FirstName { get; set; } = string.Empty;
+    public string? LastName { get; set; } = string.Empty;
+    public string? SocialProvider { get; set; } = string.Empty;
+    public string? SocialProviderId { get; set; } = string.Empty;
 }

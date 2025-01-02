@@ -13,7 +13,7 @@ public class UserService: IUserService
     {
         _context = context;
     }
-    public Task<UserDto> CreateUserAsync(User userDto)
+    public Task<UserDto> CreateUserAsync(UserDto userDto)
     {
         var user = new User
         {
@@ -21,6 +21,7 @@ public class UserService: IUserService
             LastName = userDto.LastName,
             Email = userDto.Email,
             PasswordHash = userDto.PasswordHash,
+
        
         };
         _context.Users.Add(user);
@@ -57,7 +58,7 @@ public class UserService: IUserService
         throw new NotImplementedException();
     }
 
-    public Task<UserDto> UpdateUserAsync(Guid id, User userDto)
+    public Task<UserDto> UpdateUserAsync(Guid id, UserDto userDto)
     {
         throw new NotImplementedException();
     }
